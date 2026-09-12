@@ -1,2 +1,2 @@
 # github-actions-node-ci
-GitHub Actions with Node.js
+GitHub Actions with Node.js LOL
