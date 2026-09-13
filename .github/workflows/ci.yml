@@ -23,19 +23,19 @@ jobs:
           node-version: 18
 
       - name: Install backend dependencies
-        working-directory: backend
+        working-directory: server
         run: npm install
 
       - name: Install frontend dependencies
-        working-directory: frontend
+        working-directory: client
         run: npm install
 
       - name: Build frontend
-        working-directory: frontend
+        working-directory: client
         run: npm run build
 
       - name: Build backend Docker image
-        run: docker build -t my-backend ./backend
+        run: docker build -t my-backend ./server
 
       - name: Build frontend Docker image
-        run: docker build -t my-frontend ./frontend
+        run: docker build -t my-frontend ./client
